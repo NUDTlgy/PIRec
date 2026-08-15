@@ -111,7 +111,7 @@ class Config:
         if self.dataset == "lastfm":
             self.lr = 3e-4
             self.warmup_lr = 5e-4
-            self.warmup_epochs = 20
+            self.warmup_epochs = 50
             self.batch_size = 128
             self.batch_log_every = 0
             self.grad_clip = 2.0
@@ -119,7 +119,7 @@ class Config:
         elif self.dataset == "book":
             self.lr = 2e-4
             self.warmup_lr = 5e-4
-            self.warmup_epochs = 20
+            self.warmup_epochs = 50
             self.batch_size = 128
             self.batch_log_every = 0
             self.grad_clip = 1.0
